@@ -78,4 +78,15 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="83dp"
         android:text="Dialog" />
+
+
+    <Button
+        android:id="@+id/btnAlertWithEditText"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="82dp"
+        android:text="Edit dialog" />
 </RelativeLayout>
