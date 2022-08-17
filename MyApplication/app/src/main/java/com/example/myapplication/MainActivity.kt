@@ -89,15 +89,21 @@ class MainActivity : AppCompatActivity() {
 
         fun withEditText(view: View) {
             popUpBinding = ProgressPopupDialogBinding.inflate(layoutInflater)
-            var editText = popUpBinding.editText
+//            var editText = popUpBinding.editText
             val builder = AlertDialog.Builder(this)
             val inflater = layoutInflater
-            builder.setTitle("With EditText")
+            builder.setTitle("Loading...")
 //            val dialogLayout = inflater.inflate(, null)
 //            val editText  = dialogLayout.findViewById<EditText>(R.id.editText)
             builder.setView(popUpBinding.root)
 //            builder.setView(dialogLayout)
-            builder.setPositiveButton("OK") { dialogInterface, i -> Toast.makeText(applicationContext, "EditText is " + editText.text.toString(), Toast.LENGTH_SHORT).show() }
+            builder.setPositiveButton("OK") { dialogInterface, i ->
+//                Toast.makeText(applicationContext, "EditText is " + editText.text.toString(), Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "alert confirmed", Toast.LENGTH_SHORT).show()
+
+            }
+
+            builder.setCancelable(false)
             builder.show()
         }
 
